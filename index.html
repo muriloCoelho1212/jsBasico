@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>JS Básico 2</title>
+</head>
+<body>
+  <h1>Formulário de CEP</h1>
+  <form class="form">
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+    <button type="submit">Buscar CEP</button>
+  </form>
+  
+  <ul class="list">
+    <li class="result-list">Logradouro: <p class="result-item" id="logradouro"></p></li>
+    <li class="result-list">Bairro: <p class="result-item" id="bairro"></p></li>
+    <li class="result-list">Cidade: <p class="result-item" id="cidade"></p></li>
+    <li class="result-list">Estado: <p class="result-item" id="estado"></p></li>
+  </ul>
+
+  <script type="text/JavaScript" src="script.js"></script>
+</body>
+</html>

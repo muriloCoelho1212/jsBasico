@@ -1,0 +1,9 @@
+.result-list {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+
+.result-item {
+  font-weight: bold;
+}
