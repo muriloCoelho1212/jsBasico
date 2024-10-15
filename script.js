@@ -25,7 +25,7 @@ function searchCep() {
   fetch(url, {
     method: 'GET',
   }).then(response => response.json()).then(data => {
-    renderData(data)
+    renderCepData(data)
   })
 }
 
@@ -51,16 +51,30 @@ function searchAddress() {
   fetch(url, {
     method: 'GET',
   }).then(response => response.json()).then(data => {
-    // renderData(data)
+    renderAddressData(data)
     console.log(data)
   })
 }
 
-function renderData(data) {
+function renderCepData(data) {
   const { logradouro, bairro, localidade, estado } = data;
 
   document.getElementById('result-logradouro').innerHTML = logradouro;
   document.getElementById('result-bairro').innerHTML = bairro;
   document.getElementById('result-cidade').innerHTML = localidade;
   document.getElementById('result-estado').innerHTML = estado;
+}
+
+function renderAddressData(data) {
+  const ul = document.querySelector('.address-list');
+
+  for (const address of data) {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.cep));
+    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.logradouro));
+    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.bairro));
+    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.localidade));
+    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.uf));
+    ul.appendChild(li);
+  }
 }
