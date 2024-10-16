@@ -30,6 +30,11 @@ input {
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
 }
 
 select {
@@ -38,7 +43,41 @@ select {
   border-radius: 4px;
 }
 
-body {
+.header-form {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #fff;
+}
+
+.menu-link {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+.header-link {
+  background-color: #fff;
+  color: #007bff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header-link:hover {
+  color: #0056b3cc;
+}
+
+.form {
   margin: 0 auto;
   padding: 24px;
   display: flex;
@@ -46,7 +85,7 @@ body {
   gap: 24px;
 }
 
-.form {
+.menu-form {
   display: flex;
   flex-direction: column;
   align-items: center;

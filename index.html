@@ -4,72 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>JS Básico 2</title>
+  <title>Formulário CEP</title>
 </head>
 <body>
-  <div class="form">
-    <h2>Formulário de CEP</h2>
-    <form class="cep-form">
-      <div class="input-form">
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
-      </div>
-      <button type="submit" class="submit-btn">Buscar CEP</button>
-    </form>
-    
-    <ul class="cep-list"></ul>
-  </div>
 
-  <div class="form">
-    <h2>Formulário de Endereço</h2>
-    <form class="address-form">
-      <div class="input-form">
-        <label for="logradouro">Logradouro:</label>
-        <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
-      </div>
-      <div class="input-form">
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade">
-      </div>
-      <div class="input-form">
-        <label for="uf">UF:</label>
-        <select id="uf" name="uf">
-          <option value="">Selecione...</option>
-          <option value="AC">Acre</option>
-          <option value="AL">Alagoas</option>
-          <option value="AP">Amapá</option>
-          <option value="AM">Amazonas</option>
-          <option value="BA">Bahia</option>
-          <option value="CE">Ceará</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="GO">Goiás</option>
-          <option value="MA">Maranhão</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="PA">Pará</option>
-          <option value="PB">Paraíba</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="PI">Piauí</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Rio Grande do Norte</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="RR">Roraima</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Sergipe</option>
-          <option value="TO">Tocantins</option>
-          <option value="EX">Estrangeiro</option>
-        </select>
-      </div>
-      <button type="submit" class="submit-btn">Buscar Endereço</button>
-    </form>
-
-    <ul class="address-list"></ul>
-  </div>
+  <header class="header-form">
+    <h1 class="header-title">JS Básico 2</h1>
+    <div class="menu-link">
+      <a href="index.html" class="header-link">Formulário CEP</a>
+      <a href="graphics/index.html" class="header-link">Gráficos</a>
+      <a href="users/index.html" class="header-link">Usuários</a>
+    </div>
+  </header>
+  <main class="form">
+    <div class="menu-form">
+      <h2>Formulário de CEP</h2>
+      <form class="cep-form">
+        <div class="input-form">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" placeholder="Digite o CEP">
+        </div>
+        <button type="submit" class="submit-btn">Buscar CEP</button>
+      </form>
+      
+      <ul class="cep-list"></ul>
+    </div>
+  
+    <div class="menu-form">
+      <h2>Formulário de Endereço</h2>
+      <form class="address-form">
+        <div class="input-form">
+          <label for="logradouro">Logradouro:</label>
+          <input type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
+        </div>
+        <div class="input-form">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Digite o nome da cidade">
+        </div>
+        <div class="input-form">
+          <label for="uf">UF:</label>
+          <select id="uf" name="uf">
+            <option value="">Selecione...</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Buscar Endereço</button>
+      </form>
+  
+      <ul class="address-list"></ul>
+    </div>
+  </main>
 
   <script type="text/JavaScript" src="script.js"></script>
 </body>
