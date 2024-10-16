@@ -5,16 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
 }
 
-h2 {
-  background-color: #fff;
+body {
+  background-color: #f0f0f0;
 }
 
 label {
   font-weight: bold;
-  background-color: #fff;
 }
 
 input {
@@ -41,6 +39,7 @@ select {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #fff;
 }
 
 .header-form {
@@ -54,18 +53,15 @@ select {
 .header-title {
   font-weight: bold;
   font-size: 24px;
-  background-color: #fff;
 }
 
 .menu-link {
   display: flex;
   gap: 12px;
   margin-left: auto;
-  background-color: #fff;
 }
 
 .header-link {
-  background-color: #fff;
   color: #007bff;
   padding: 8px 16px;
   border-radius: 4px;
@@ -100,7 +96,6 @@ select {
   display: flex;
   align-items: center;
   gap: 0 12px;
-  background-color: #fff;
 }
 
 .result-item {
@@ -111,21 +106,18 @@ select {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background-color: #fff;
 } 
 
 .cep-form {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background-color: #fff;
 }
 
 .input-form {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  background-color: #fff;
 }
 
 .address-item {
@@ -134,17 +126,14 @@ select {
   font-weight: bold;
   align-items: center;
   padding: 12px;
-  background-color: #fff;
 }
 
 .address-subitem {
   display: flex;
   list-style: none;
   font-weight: normal;
-  background-color: #fff;
 }
 
 .cep-list {
   padding: 12px;
-  background-color: #fff;
 }

@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
     background-color: #f0f0f0;
 }
 
@@ -19,18 +22,15 @@
 .header-title {
     font-weight: bold;
     font-size: 24px;
-    background-color: #fff;
 }
 
 .menu-link {
     display: flex;
     gap: 12px;
     margin-left: auto;
-    background-color: #fff;
 }
 
 .header-link {
-    background-color: #fff;
     color: #007bff;
     padding: 8px 16px;
     border-radius: 4px;
@@ -57,7 +57,6 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    background-color: #fff;
 }
 
 .img {
@@ -67,27 +66,20 @@
     object-fit: cover;
 }
 
-.user-img {
-    background-color: #fff;
-}
-
 .user-data {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background-color: #fff;
 }
 
 .user-title {
     font-size: 24px;
     font-weight: bold;
-    background-color: #fff;
 }
 
 .user-info {
     display: flex;
     gap: 12px;
-    background-color: #fff;
 }
 
 .submit-btn {
