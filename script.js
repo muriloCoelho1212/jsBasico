@@ -59,10 +59,19 @@ function searchAddress() {
 function renderCepData(data) {
   const { logradouro, bairro, localidade, estado } = data;
 
-  document.getElementById('result-logradouro').innerHTML = logradouro;
-  document.getElementById('result-bairro').innerHTML = bairro;
-  document.getElementById('result-cidade').innerHTML = localidade;
-  document.getElementById('result-estado').innerHTML = estado;
+  const ul = document.querySelector('.cep-list');
+  const li = document.createElement('li');
+
+  li.appendChild(document.createTextNode(`Logradouro: ${logradouro}`));
+  li.appendChild(document.createElement('br'));
+  li.appendChild(document.createTextNode(`Bairro: ${bairro}`));
+  li.appendChild(document.createElement('br'));
+  li.appendChild(document.createTextNode(`Cidade: ${localidade}`));
+  li.appendChild(document.createElement('br'));
+  li.appendChild(document.createTextNode(`Estado: ${estado}`));
+
+  li.classList.add('result-list');
+  ul.appendChild(li);
 }
 
 function renderAddressData(data) {
@@ -70,11 +79,13 @@ function renderAddressData(data) {
 
   for (const address of data) {
     const li = document.createElement('li');
-    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.cep));
-    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.logradouro));
-    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.bairro));
-    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.localidade));
-    li.appendChild(document.createTextNode(document.createElement('p').innerHTML = address.uf));
+    li.appendChild(document.createTextNode(`CEP: ${address.cep}`));
+    const subItemLi = document.createElement('li');
+    subItemLi.appendChild(document.createTextNode(`Logradouro: ${address.logradouro} - `));
+    subItemLi.appendChild(document.createTextNode(`Bairro: ${address.bairro}`));
+    li.classList.add('address-item');
+    subItemLi.classList.add('address-subitem');
     ul.appendChild(li);
+    li.appendChild(subItemLi);
   }
 }
